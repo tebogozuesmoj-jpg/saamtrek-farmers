@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saamtrek Saamwerk and Saamleer Farmers</title>
+  <meta name="description" content="Saamtrek Saamwerk and Saamleer Farmers — connecting farmers, markets, and communities through collaboration and opportunity." />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-[#f4f7f2] text-gray-800 antialiased">
+
+<!-- NAV -->
+<header class="bg-white/90 backdrop-blur sticky top-0 z-40 border-b">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="font-semibold text-lg">
+      Saamtrek Saamwerk & Saamleer
+    </h1>
+
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#work" class="hover:underline">What We Do</a>
+      <a href="#listings" class="hover:underline">Listings</a>
+      <a href="#contact" class="px-4 py-2 bg-green-700 text-white rounded">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="relative min-h-[90vh] overflow-hidden">
+  <!-- Background image -->
+  <div
+    class="absolute inset-0 bg-cover bg-center scale-110"
+    style="background-image: url('public/assets/images/farm-hero.jpg');"
+  ></div>
+
+  <!-- Dark gradient overlay -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-6xl mx-auto px-6 pt-32 pb-24">
+    <h1 class="text-white text-4xl md:text-6xl font-semibold leading-tight">
+      Growing Together.<br />
+      Working Together.<br />
+      Learning Together.
+    </h1>
+
+    <p class="mt-6 max-w-xl text-white/90 text-lg">
+      Saamtrek Saamwerk and Saamleer Farmers connects producers, markets,
+      and communities through collaboration and opportunity.
+    </p>
+
+    <div class="mt-10 flex gap-4">
+      <a
+        href="#listings"
+        class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-full transition"
+      >
+        View Weekly Listings
+      </a>
+
+      <a
+        href="#contact"
+        class="px-6 py-3 border border-white/40 text-white rounded-full hover:bg-white/10 transition"
+      >
+        Join the Association
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+  <div>
+    <h2 class="text-3xl font-semibold text-green-800">About Us</h2>
+    <p class="mt-4 text-gray-600 leading-relaxed">
+      We are a community-driven farmers association focused on empowering
+      small and emerging farmers, promoting sustainable agriculture, and
+      opening access to markets across South Africa.
+    </p>
+  </div>
+
+  <div class="rounded-2xl overflow-hidden shadow-xl">
+    <img
+      src="public/assets/images/farmers-meeting.jpg"
+      alt="Farmers meeting"
+      class="w-full h-full object-cover"
+    />
+  </div>
+</section>
+
+<!-- AGRICULTURE SHOWCASE -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+  <!-- Section header -->
+  <div class="max-w-3xl mb-16">
+    <h2 class="text-3xl md:text-4xl font-semibold text-gray-900">
+      From Field to Livestock
+    </h2>
+    <p class="mt-4 text-gray-600 text-lg">
+      A visual glimpse into the farms, fields, and livestock that make up our
+      growing agricultural community.
+    </p>
+  </div>
+
+  <!-- Image grid -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <!-- Large feature image -->
+    <div class="md:col-span-2 group relative overflow-hidden rounded-3xl shadow-xl">
+      <img
+        src="public/assets/images/farm-lands.jpg"
+        alt="Farm fields"
+        class="w-full h-[420px] object-cover group-hover:scale-105 transition duration-700"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
+      <span class="absolute bottom-6 left-6 text-white text-xl font-semibold">
+        Open Farm Fields
+      </span>
+    </div>
+
+    <!-- Right stacked images -->
+    <div class="grid grid-rows-2 gap-8">
+      
+      <div class="group relative overflow-hidden rounded-3xl shadow-xl">
+        <img
+          src="public/assets/images/livestock.png"
+          alt="Livestock farming"
+          class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+        <span class="absolute bottom-4 left-4 text-white font-medium">
+          Livestock
+        </span>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-3xl shadow-xl">
+        <img
+          src="public/assets/images/produce.jpg"
+          alt="Fresh produce"
+          class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+        <span class="absolute bottom-4 left-4 text-white font-medium">
+          Fresh Produce
+        </span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="relative h-[50vh] my-20">
+  <img
+    src="public/assets/images/fields.jpg"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <div class="relative h-full flex items-center justify-center">
+    <h2 class="text-white text-4xl font-semibold">
+      What We Do
+    </h2>
+  </div>
+</section>
+
+
+<!-- WHAT WE DO -->
+<section id="work" class="bg-white/60 py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-2xl font-semibold">What We Do</h2>
+
+    <div class="mt-8 grid md:grid-cols-4 gap-6">
+      <div class="p-6 border rounded-lg bg-white shadow-sm">
+        🌱 Support emerging farmers
+      </div>
+      <div class="p-6 border rounded-lg bg-white shadow-sm">
+        🌾 Promote sustainable agriculture
+      </div>
+      <div class="p-6 border rounded-lg bg-white shadow-sm">
+        🤝 Create market access
+      </div>
+      <div class="p-6 border rounded-lg bg-white shadow-sm">
+        📚 Encourage learning & collaboration
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LISTINGS -->
+<section id="listings" class="max-w-6xl mx-auto px-6 py-16">
+  <h2 class="text-2xl font-semibold">Weekly Farmers’ Listings</h2>
+  <p class="mt-2 text-gray-600">Fresh produce and livestock from our members.</p>
+
+  <div class="mt-8 grid md:grid-cols-2 gap-8">
+    <article
+    class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+    >
+    <div class="relative overflow-hidden">
+        <img
+        src="public/assets/images/maize.jpg"
+        alt="Fresh Maize"
+        class="w-full h-64 object-cover group-hover:scale-110 transition duration-700"
+        />
+
+        <!-- soft gradient overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+    </div>
+
+    <div class="p-6">
+        <span class="inline-block text-xs font-semibold uppercase tracking-wide text-green-700 mb-2">
+        Crops
+        </span>
+
+        <h3 class="text-lg font-semibold text-gray-900">Fresh Maize</h3>
+
+        <p class="mt-2 text-sm text-gray-600">Seller: John Mokoena</p>
+        <p class="text-sm text-gray-600">Location: Free State</p>
+
+        <a
+        href="#"
+        class="inline-flex items-center gap-2 mt-5 text-green-700 font-medium hover:gap-3 transition-all"
+        >
+        Contact Seller →
+        </a>
+    </div>
+    </article>
+
+
+    <article
+    class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+    >
+    <div class="relative overflow-hidden">
+        <img
+        src="public/assets/images/goats.png"
+        alt="Fresh Maize"
+        class="w-full h-64 object-cover group-hover:scale-110 transition duration-700"
+        />
+
+        <!-- soft gradient overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+    </div>
+
+    <div class="p-6">
+        <span class="inline-block text-xs font-semibold uppercase tracking-wide text-green-700 mb-2">
+        live stock
+        </span>
+
+        <h3 class="text-lg font-semibold text-gray-900">Boer Goats</h3>
+
+        <p class="mt-2 text-sm text-gray-600">Seller: Lerato Mahlangu</p>
+        <p class="text-sm text-gray-600">Location: Mpumalanga</p>
+
+        <a
+        href="#"
+        class="inline-flex items-center gap-2 mt-5 text-green-700 font-medium hover:gap-3 transition-all"
+        >
+        Contact Seller →
+        </a>
+    </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="max-w-4xl mx-auto px-6 py-16 border-t">
+  <h2 class="text-2xl font-semibold">Contact Us</h2>
+  <p class="mt-2 text-gray-600">Get in touch or join the association.</p>
+
+  <div class="mt-6 flex gap-4">
+    <a href="https://wa.me/27XXXXXXXXX" class="px-6 py-3 bg-green-700 text-white rounded">
+      WhatsApp Us
+    </a>
+    <a href="mailto:info@saamtrek.org" class="px-6 py-3 border rounded">
+      Email Us
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-white border-t py-8">
+  <div class="max-w-6xl mx-auto px-6 text-sm text-gray-600">
+    © 2025 Saamtrek Saamwerk and Saamleer Farmers
+  </div>
+</footer>
+
+</main>
+</body>
+</html>
