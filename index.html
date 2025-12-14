@@ -21,8 +21,10 @@
 <body class="bg-[#f4f7f2] text-gray-800 antialiased">
 
 <!-- NAV -->
+<!-- NAV -->
 <header class="bg-white/90 backdrop-blur sticky top-0 z-40 border-b">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
     <!-- Logo + Name -->
     <div class="flex items-center gap-3">
       <img
@@ -30,22 +32,49 @@
         alt="Saamtrek Logo"
         class="h-10 w-10 object-contain"
       />
-      <h1 class="font-semibold text-lg leading-tight">
+      <h1 class="font-semibold text-lg leading-tight text-gray-900">
         Saamtrek Saamwerk<br class="hidden sm:block" />
-        <span class="text-sm font-normal text-gray-600">
-          and Saamleer Farmers
-        </span>
+        and Saamleer Farmers
       </h1>
     </div>
 
-    <!-- Navigation -->
-    <nav class="hidden md:flex gap-6 text-sm">
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex gap-6 text-sm items-center">
       <a href="#about" class="hover:underline">About</a>
       <a href="#work" class="hover:underline">What We Do</a>
       <a href="#listings" class="hover:underline">Listings</a>
-      <a href="#contact" class="px-4 py-2 bg-green-700 text-white rounded">Contact</a>
+      <a href="#contact" class="px-4 py-2 bg-green-700 text-white rounded">
+        Contact
+      </a>
     </nav>
 
+    <!-- Mobile Menu Button -->
+    <button
+      id="menuBtn"
+      class="md:hidden p-2 rounded hover:bg-gray-100"
+      aria-label="Open menu"
+    >
+      ☰
+    </button>
+
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div
+    id="mobileMenu"
+    class="hidden md:hidden bg-white border-t"
+  >
+    <nav class="px-6 py-4 flex flex-col gap-4 text-sm">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#work" class="hover:underline">What We Do</a>
+      <a href="#listings" class="hover:underline">Listings</a>
+      <a
+        href="#contact"
+        class="inline-block px-4 py-2 bg-green-700 text-white rounded w-fit"
+      >
+        Contact
+      </a>
+    </nav>
   </div>
 </header>
 
@@ -421,6 +450,88 @@
   </div>
 </section>
 
+<!-- PARTNER LOGO STRIP -->
+<section class="bg-white border-t border-b">
+  <div class="max-w-6xl mx-auto px-6 py-12">
+
+    <p class="text-center text-xs text-gray-500 mb-10 uppercase tracking-widest">
+      Engaging with key agricultural, financial & institutional stakeholders
+    </p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+
+      <!-- Financial Institutions -->
+      <div class="flex justify-center">
+        <img
+          src="public\assets\images\partners\nedbank-logo.png"
+          alt="Nedbank"
+          class="h-10 object-contain opacity-100"
+        />
+      </div>
+
+      <div class="flex justify-center">
+        <img
+          src="public\assets\images\partners\absa-logo.webp"
+          alt="ABSA Bank"
+          class="h-10 object-contain opacity-100"
+        />
+      </div>
+
+      <div class="flex justify-center">
+        <img
+          src="public\assets\images\partners\standardbank-logo.jpg"
+          alt="Standard Bank"
+          class="h-10 object-contain opacity-100"
+        />
+      </div>
+
+      <!-- Agricultural & Industry Bodies -->
+      <div class="flex justify-center">
+        <img
+          src="public\assets\images\partners\RPO-Logo.png"
+          alt="Red Meat Producers Organisation (RPO)"
+          class="h-10 object-contain opacity-100"
+        />
+      </div>
+
+      <div class="flex justify-center">
+        <img
+          src="public/assets/images/partners/sernickgroup-logo.png"
+          alt="Sernick Group"
+          class="h-10 object-contain opacity-100"
+        />
+      </div>
+
+      <!-- Education & Training -->
+
+      <div class="flex justify-center">
+        <img
+          src="public\assets\images\partners\ufs-logo.jpg"
+          alt="University of Free State"
+          class="h-10 object-contain opacity-100"
+        />
+      </div>   
+      
+      <div class="flex justify-center">
+        <img
+          src="public\assets\images\partners\uniwest-logo.png"
+          alt="North-West University"
+          class="h-10 object-contain opacity-100"
+        />
+      </div>
+
+      <div class="flex justify-center">
+        <img
+          src="public\assets\images\partners\taung-agric.jpg"
+          alt="Taung Agricultural College"
+          class="h-10 object-contain opacity-100"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 <!-- PARTNERS -->
 <section id="partners" class="max-w-6xl mx-auto px-6 py-16">
@@ -483,5 +594,21 @@
 </footer>
 
 </main>
+ <!-- Mobile menu script -->
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    mobileMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+  </script>
+
 </body>
 </html>
